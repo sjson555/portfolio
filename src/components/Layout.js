@@ -3,7 +3,7 @@ import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
-import Project from "./Project/Project";
+import ProjectList from "./Project/ProjectList";
 import Skills from "./Skills";
 
 const Layout = () => {
@@ -20,7 +20,7 @@ const Layout = () => {
         <Skills />
       </div>
       <div id="project">
-        <Project />
+        <ProjectList />
       </div>
       <div id="contact">
         <Contact />
