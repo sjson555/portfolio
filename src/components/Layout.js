@@ -1,21 +1,30 @@
-import { Routes, Route } from "react-router-dom";
-/* CSS */
-/* Components */
-/* Pages */
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Contact from "../pages/Contact";
-import Project from "../pages/Project";
+import React from "react";
+import Header from "./Header";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
+import Project from "./Project/Project";
+import Skills from "./Skills";
 
 const Layout = () => {
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/project" element={<Project />} />
-      </Routes>
+      <Header />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="project">
+        <Project />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
     </div>
   );
 };
