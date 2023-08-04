@@ -15,10 +15,10 @@ const ProjectList = () => (
         demo="https://github.com/sjson555/react-portfolio"
       />
       <Project
-        title="Project 2"
-        description="Description of Project 2."
-        github="https://github.com/example/project2"
-        demo="https://example.com/project2-demo"
+        title="WeddingYou"
+        description="맞춤형 웨딩플래너 매칭 서비스"
+        github="https://github.com/weddingYou-Project"
+        demo="/pdf/weddingyou.pdf"
       />
     </div>
   </div>
