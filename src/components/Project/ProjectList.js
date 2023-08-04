@@ -10,7 +10,7 @@ const ProjectList = () => (
     <div className="project-container">
       <Project
         title="react-portfolio"
-        description="리액트로 만든 포트폴리오입니다."
+        description="포트폴리오"
         github="https://github.com/sjson555/react-portfolio"
         demo="https://github.com/sjson555/react-portfolio"
       />
@@ -20,6 +20,8 @@ const ProjectList = () => (
         github="https://github.com/weddingYou-Project"
         demo="/pdf/weddingyou.pdf"
       />
+      <Project title="project3" description="프로젝트 예시" github="" demo="" />
+      <Project title="project4" description="프로젝트 예시" github="" demo="" />
     </div>
   </div>
 );
