@@ -6,16 +6,30 @@ const Home = () => {
   const [text, setText] = useState("");
   const [i, setI] = useState(0);
 
+  const startTyping = () => {
+    setI(0);
+    setText("");
+  };
+
   useEffect(() => {
-    if (i < finalText.length) {
-      const typing = setInterval(() => {
+    const typingInterval = setInterval(() => {
+      if (i < finalText.length) {
         setText((prevText) => prevText + finalText[i]);
         setI((prevI) => prevI + 1);
-      }, 178);
+      } else {
+        clearInterval(typingInterval);
+        setTimeout(startTyping, 3500);
+      }
+    }, 178);
 
-      return () => clearInterval(typing);
-    }
+    return () => {
+      clearInterval(typingInterval);
+    };
   }, [i]);
+
+  useEffect(() => {
+    startTyping();
+  }, []);
 
   return (
     <div className="typer" id="home">
