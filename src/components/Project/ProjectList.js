@@ -20,8 +20,6 @@ const ProjectList = () => (
         github="https://github.com/weddingYou-Project"
         demo="/pdf/weddingyou.pdf"
       />
-      <Project title="project3" description="프로젝트 예시" github="" demo="" />
-      <Project title="project4" description="프로젝트 예시" github="" demo="" />
     </div>
   </div>
 );
