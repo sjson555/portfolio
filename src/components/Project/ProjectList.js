@@ -12,7 +12,7 @@ const ProjectList = () => (
         title="react-portfolio"
         description="포트폴리오"
         github="https://github.com/sjson555/react-portfolio"
-        demo="https://github.com/sjson555/react-portfolio"
+        demo="https://sjson555.github.io/"
       />
       <Project
         title="WeddingYou"
