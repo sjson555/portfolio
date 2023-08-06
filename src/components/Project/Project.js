@@ -7,10 +7,6 @@ const Project = ({ title, demo, description, github, projectimage }) => {
     <div className="project-content">
       <p className="project-title">{title}</p>
       <div className="project-divider" />
-      <div className="project-image-wrap">
-        <img className="project-image" src={projectimage} alt={projectimage} />
-      </div>
-      <div className="project-divider" />
       <p className="project-description">{description}</p>
       <div className="project-buttons">
         {github && (
