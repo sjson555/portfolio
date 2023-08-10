@@ -11,11 +11,9 @@ const About = () => {
         <h1>title</h1>
         <section className="about-me-section">
           <p>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            2023.01.09 ~ 2023.06.23
             <br />
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            <br />
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            멀티캠퍼스 풀스택 개발자 교육과정
           </p>
         </section>
       </div>
