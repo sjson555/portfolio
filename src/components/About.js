@@ -14,7 +14,6 @@ const About = () => {
         <p>
           안녕하세요. 풀스택 개발자를 꿈꾸는 손성준입니다.
           <br />
-          저는 새로운 기술을 배우면서 무언가를 만드는 것을 좋아합니다.
         </p>
         <section className="about-me-section">
           <p>
