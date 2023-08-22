@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 
 import { motion } from 'framer-motion';
 
-import { isMobile } from '../../common/lib/isMobile';
 
 import { useMouseVariant } from '../hooks/useMouseVariant';
 import { MouseVariant } from '../types/mouse.type';
@@ -11,10 +10,8 @@ const CircleMouse = () => {
   const { mouseVariant, text } = useMouseVariant();
 
   const [mousePosition, setMousePosition] = useState({ x: -100, y: -100 });
-  const [touchDevice, setTouchDevice] = useState(false);
 
   useEffect(() => {
-    if (isMobile()) setTouchDevice(true);
 
     const updateMousePosition = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
@@ -25,7 +22,6 @@ const CircleMouse = () => {
     return () => document.removeEventListener('mousemove', updateMousePosition);
   }, []);
 
-  if (touchDevice) return null;
 
   const variants: Record<MouseVariant, {}> = {
     [MouseVariant.DEFAULT]: {

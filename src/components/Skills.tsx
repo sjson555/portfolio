@@ -15,12 +15,12 @@ const SkillIcon = ({
   const { setMouseVariant } = useMouseVariant();
 
   const handleMouseEnter = () => {
-    // console.log(`Mouse entered: ${name}`);
+    console.log(`Mouse entered: ${name}`);
     setMouseVariant.technology(name);
   };
 
   const handleMouseLeave = () => {
-    // console.log(`Mouse left: ${name}`);
+    console.log(`Mouse left: ${name}`);
     setMouseVariant.default();
   };
 
