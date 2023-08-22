@@ -1,8 +1,8 @@
 import React from "react";
-import { useMouseVariant } from '../modules/customMouse';
 import mysqlSVG from "../svg/mysql.svg";
 import reactSVG from "../svg/react.svg";
 import springbootSVG from "../svg/springboot.svg";
+import { useMouseVariant } from "../modules/customMouse/hooks/useMouseVariant";
 import "../styles/Skills.css";
 
 const SkillIcon = ({
@@ -37,7 +37,7 @@ const SkillIcon = ({
 
 const Skills = () => {
   return (
-    <div className="skills">
+    <div className="skills" >
       <SkillIcon svg={reactSVG} name="React" />
       <SkillIcon svg={springbootSVG} name="SpringBoot" />
       <SkillIcon svg={mysqlSVG} name="MySQL" />
