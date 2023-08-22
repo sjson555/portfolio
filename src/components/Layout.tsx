@@ -1,4 +1,5 @@
 import React from "react";
+import { MouseVariantProvider } from "../modules/customMouse"; 
 import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
@@ -8,7 +9,7 @@ import Skills from "./Skills";
 
 const Layout = () => {
   return (
-    <div>
+    <MouseVariantProvider>
       <Header />
       <div id="home">
         <Home />
@@ -25,7 +26,7 @@ const Layout = () => {
       <div id="contact">
         <Contact />
       </div>
-    </div>
+    </MouseVariantProvider>
   );
 };
 
