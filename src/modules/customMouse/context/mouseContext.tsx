@@ -1,5 +1,4 @@
 import { createContext, ReactNode, useEffect, useState } from 'react';
-
 import { MouseVariant } from '../types/mouse.type';
 
 export const mouseContext = createContext({

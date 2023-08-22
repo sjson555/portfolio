@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-
 import { mouseContext } from '../context/mouseContext';
 import { MouseVariant } from '../types/mouse.type';
 

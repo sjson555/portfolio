@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react';
-
 import { motion } from 'framer-motion';
-
-
 import { useMouseVariant } from '../hooks/useMouseVariant';
 import { MouseVariant } from '../types/mouse.type';
 
