@@ -5,6 +5,7 @@ import reactSVG from "../svg/react.svg";
 import springbootSVG from "../svg/springboot.svg";
 import { useMouseVariant } from "../modules/customMouse/hooks/useMouseVariant";
 import "../styles/Skills.css";
+import CircleMouse from "../modules/customMouse";
 
 const SkillIcon = ({
   svg,
@@ -38,6 +39,7 @@ const Skills = () => {
       <SkillIcon svg={reactSVG} name="React" />
       <SkillIcon svg={springbootSVG} name="SpringBoot" />
       <SkillIcon svg={mysqlSVG} name="MySQL" />
+      <CircleMouse/>
     </div>
   );
 };
