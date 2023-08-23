@@ -5,9 +5,9 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import ProjectList from "./components/Project/ProjectList";
 import Skills from "./components/Skills";
-
-
 import "./styles/global.css";
+
+
 function App() {
   return (
     <div className="App">
@@ -27,7 +27,7 @@ function App() {
           <div id="contact">
             <Contact />
           </div>
-   </div>
+    </div>
   );
 }
 
