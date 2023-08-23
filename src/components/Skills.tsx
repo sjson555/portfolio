@@ -5,23 +5,16 @@ import reactSVG from "../svg/react.svg";
 import springbootSVG from "../svg/springboot.svg";
 import { useMouseVariant } from "../modules/customMouse/hooks/useMouseVariant";
 import "../styles/Skills.css";
-import CircleMouse from "../modules/customMouse";
 
-const SkillIcon = ({
-  svg,
-  name,
-}: {
-  svg: string;
-  name: string;
-}) =>{
-  const { setMouseVariant } = useMouseVariant(); 
+const SkillIcon = ({ svg, name }: { svg: string; name: string }) => {
+  const { setMouseVariant } = useMouseVariant();
 
   return (
     <motion.div
-    initial={{ opacity: 0, y: 5 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.3 }}
-  >
+      initial={{ opacity: 0, y: 5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <img
         src={svg}
         alt={name}
@@ -31,15 +24,14 @@ const SkillIcon = ({
       />
     </motion.div>
   );
-}
+};
 
 const Skills = () => {
   return (
-    <div className="skills" >
+    <div className="skills">
       <SkillIcon svg={reactSVG} name="React" />
       <SkillIcon svg={springbootSVG} name="SpringBoot" />
       <SkillIcon svg={mysqlSVG} name="MySQL" />
-      <CircleMouse/>
     </div>
   );
 };

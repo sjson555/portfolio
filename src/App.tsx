@@ -6,31 +6,31 @@ import Contact from "./components/Contact";
 import ProjectList from "./components/Project/ProjectList";
 import Skills from "./components/Skills";
 import "./styles/global.css";
-import { MouseVariantProvider } from "./modules/customMouse";
-
+import CircleMouse, { MouseVariantProvider } from "./modules/customMouse";
 
 function App() {
   return (
-    <MouseVariantProvider>
-      <div className="App">
-            <Header />
-            <div id="home">
-              <Home />
-            </div>
-            <div id="about">
-              <About />
-            </div>
-            <div id="skills">
-              <Skills />
-            </div>
-            <div id="project">
-              <ProjectList />
-            </div>
-            <div id="contact">
-              <Contact />
-            </div>
-      </div>
-    </MouseVariantProvider>
+    <div className="App">
+      <MouseVariantProvider>
+        <CircleMouse />
+        <Header />
+        <div id="home">
+          <Home />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="project">
+          <ProjectList />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+      </MouseVariantProvider>
+    </div>
   );
 }
 
