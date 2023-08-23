@@ -1,0 +1,44 @@
+.circleMouse {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+
+.pointerEventsNone {
+  pointer-events: none;
+}
+
+.defaultVariant {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.defaultVariant.hidden {
+  opacity: 0;
+  transform: translate(0, 20px);
+}
+
+.textVariant,
+.technologyVariant {
+  height: 150px;
+  width: 150px;
+  mix-blend-mode: difference;
+}
+
+.technologyVariant {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+  background-size: cover;
+}

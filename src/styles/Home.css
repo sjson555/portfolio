@@ -14,14 +14,14 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: black;
+  background-color: white;
   background-size: cover;
-  color: white;
+  color: black;
   width: 100%;
 }
 
 .typer-text {
-  border-right: 0.1em solid white;
+  border-right: 0.1em solid black;
   font-size: 4vw;
   white-space: pre;
   line-height: 1;
