@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import mysqlSVG from "../svg/mysql.svg";
 import reactSVG from "../svg/react.svg";
 import springbootSVG from "../svg/springboot.svg";
+import { useMouseVariant } from "../modules/customMouse/hooks/useMouseVariant";
 import "../styles/Skills.css";
 
 const SkillIcon = ({
@@ -12,17 +13,7 @@ const SkillIcon = ({
   svg: string;
   name: string;
 }) =>{
-  const { setMouseVariant } = useMouseVariant(); // custom hook
-
-  const handleMouseEnter = () => {
-    console.log(`Mouse entered: ${name}`);
-    setMouseVariant.technology(name);
-  };
-
-  const handleMouseLeave = () => {
-    console.log(`Mouse left: ${name}`);
-    setMouseVariant.default();
-  };
+  const { setMouseVariant } = useMouseVariant(); 
 
   return (
     <motion.div
@@ -34,8 +25,8 @@ const SkillIcon = ({
         src={svg}
         alt={name}
         className="skills-icon"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        onMouseEnter={() => setMouseVariant.technology(name)}
+        onMouseLeave={setMouseVariant.default}
       />
     </motion.div>
   );
