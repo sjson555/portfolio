@@ -20,6 +20,9 @@ const CircleMouse = () => {
 
   const variants: Record<MouseVariant, {}> = {
     [MouseVariant.DEFAULT]: {
+      height: 0,
+      width: 0,
+
       x: mousePosition.x,
       y: mousePosition.y,
     },
