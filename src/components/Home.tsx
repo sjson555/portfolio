@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Home.css";
 
-const Home: React.FC = () => {
+const Home = () => {
   const finalText = "안녕하세요 손성준입니다.";
   const [text, setText] = useState<string>("");
   const [i, setI] = useState<number>(0);

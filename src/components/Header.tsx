@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Header.css";
 
-const Header: React.FC = () => {
+const Header = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
 
   const handleScroll = () => {

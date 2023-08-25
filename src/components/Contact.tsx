@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Contact.css";
 import { FaGithub, FaArrowUp } from "react-icons/fa";
 
-const Contact: React.FC = () => {
+const Contact = () => {
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

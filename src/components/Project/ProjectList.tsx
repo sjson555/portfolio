@@ -2,7 +2,7 @@ import React from "react";
 import Project from "./Project";
 import "../../styles/Project.css";
 
-const ProjectList: React.FC = () => (
+const ProjectList = () => (
   <div className="project" id="projects">
     <div className="project-title">
       <h1 className="project-heading">Projects</h1>
