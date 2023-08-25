@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Home.css";
 
-const Home = () => {
+const Home: React.FC = () => {
   const finalText = "안녕하세요 손성준입니다.";
-  const [text, setText] = useState("");
-  const [i, setI] = useState(0);
+  const [text, setText] = useState<string>("");
+  const [i, setI] = useState<number>(0);
 
   const startTyping = () => {
     setI(0);

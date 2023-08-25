@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/About.css";
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <div className="about-me" id="about">
       <div className="about-me-title">

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Header.css";
 
-const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
+const Header: React.FC = () => {
+  const [scrolled, setScrolled] = useState<boolean>(false);
 
   const handleScroll = () => {
     if (window.scrollY > 20) {
@@ -19,9 +19,11 @@ const Header = () => {
     };
   }, []);
 
-  const handleLinkClick = (sectionId) => {
+  const handleLinkClick = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    element.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   return (

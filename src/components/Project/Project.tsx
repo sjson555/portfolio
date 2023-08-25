@@ -2,7 +2,17 @@ import React from "react";
 import { BsGithub, BsGlobe } from "react-icons/bs";
 import "../../styles/Project.css";
 
-const Project = ({ title, demo, description, github }) => {
+const Project = ({
+  title,
+  demo,
+  description,
+  github,
+}: {
+  title: string;
+  demo?: string;
+  description: string;
+  github?: string;
+}) => {
   return (
     <div className="project-content">
       <p className="project-title">{title}</p>
