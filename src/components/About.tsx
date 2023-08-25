@@ -6,13 +6,10 @@ const About = () => {
     <div className="about-me" id="about">
       <div className="about-me-title">
         <h1 className="hedding">About Me</h1>
-        <div className="about-me-photo">
-          <img src="" alt="profile" />
-        </div>
       </div>
       <div className="about-me-content">
         <p>
-          안녕하세요. 풀스택 개발자를 꿈꾸는 손성준입니다.
+          안녕하세요.
           <br />
         </p>
         <section className="about-me-section">
