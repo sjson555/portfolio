@@ -3,13 +3,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: black;
+  background-color: white;
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 100;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .header-class.scrolled {
@@ -33,10 +32,7 @@
 }
 
 .header-text li {
-  color: #333333;
-  font-size: 16px;
-}
-
-.header-text li.active {
+  color: black;
+  font-size: 18px;
   font-weight: bold;
 }
