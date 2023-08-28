@@ -3,11 +3,13 @@ import { BsGithub, BsGlobe } from "react-icons/bs";
 import "../../styles/Project.css";
 
 const Project = ({
+  imgSrc,
   title,
   demo,
   description,
   github,
 }: {
+  imgSrc: string;
   title: string;
   demo?: string;
   description: string;
@@ -15,6 +17,8 @@ const Project = ({
 }) => {
   return (
     <div className="project-content">
+      <img className="project-image" src={imgSrc} alt={title} />
+      <div className="project-divider" />
       <p className="project-title">{title}</p>
       <div className="project-divider" />
       <p className="project-description">{description}</p>
