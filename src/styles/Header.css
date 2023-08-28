@@ -25,14 +25,16 @@
 .header-text li {
   margin-right: 20px;
   cursor: pointer;
+  transition: color 0.3s;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header-text li:hover {
+  color: #f86a6a;
 }
 
 .header-text li:last-child {
   margin-right: 0;
-}
-
-.header-text li {
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
 }
