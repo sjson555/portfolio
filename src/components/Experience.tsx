@@ -9,9 +9,15 @@ const Experience = () => {
       </div>
       <div className="experience-content">
         <p>
-          2023.01.09 ~ 2023.06.23
+          2023.01 ~ 2023.06
           <br />
-          멀티캠퍼스 풀스택 개발자 교육과정
+          <a
+            href="https://learningssj.notion.site/1b6df1961dc446869a67c95d250f0df0?v=407a424f28e84ea9a4f5672344691fe8&pvs=4"
+            target="_blank"
+            rel="noreferrer"
+          >
+            멀티캠퍼스 풀스택 개발자 교육과정
+          </a>
         </p>
       </div>
     </div>

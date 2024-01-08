@@ -1,6 +1,6 @@
 .about-me {
   background: black;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
 }
 
@@ -35,9 +35,9 @@
 }
 
 .about-me-content {
-  margin-bottom: 4rem;
-  margin-top: 4rem;
+  margin-left: auto;
   box-sizing: border-box;
+  font-size: 1.3rem;
   padding: 1rem;
   margin-right: 8vw;
   width: 100%;
