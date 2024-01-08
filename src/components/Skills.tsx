@@ -29,9 +29,14 @@ const SkillIcon = ({ svg, name }: { svg: string; name: string }) => {
 const Skills = () => {
   return (
     <div className="skills">
-      <SkillIcon svg={reactSVG} name="React" />
-      <SkillIcon svg={springbootSVG} name="SpringBoot" />
-      <SkillIcon svg={mysqlSVG} name="MySQL" />
+      <div className="skills-title">
+        <div className="skills-hedding">Skill</div>
+      </div>
+      <div className="skills-icon-list">
+        <SkillIcon svg={reactSVG} name="React" />
+        <SkillIcon svg={springbootSVG} name="SpringBoot" />
+        <SkillIcon svg={mysqlSVG} name="MySQL" />
+      </div>
     </div>
   );
 };

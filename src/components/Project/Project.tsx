@@ -1,19 +1,20 @@
 import React from "react";
-import { BsGithub, BsGlobe } from "react-icons/bs";
+import { BsGithub, BsFiletypePpt } from "react-icons/bs";
 import "../../styles/Project.css";
 
 const Project = ({
   imgSrc,
   title,
-  demo,
   description,
+  ppt,
   github,
 }: {
   imgSrc: string;
   title: string;
-  demo?: string;
+  ppt?: string;
   description: string;
   github?: string;
+  process?: string;
 }) => {
   return (
     <div className="project-content">
@@ -34,15 +35,15 @@ const Project = ({
             GitHub
           </a>
         )}
-        {demo && (
+        {ppt && (
           <a
             className="project-btn"
-            href={demo}
+            href={ppt}
             target="_blank"
             rel="noreferrer"
           >
-            <BsGlobe className="project-icon" />
-            Demo
+            <BsFiletypePpt className="project-icon" />
+            PPT
           </a>
         )}
       </div>

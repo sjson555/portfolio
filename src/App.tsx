@@ -7,6 +7,7 @@ import ProjectList from "./components/Project/ProjectList";
 import Skills from "./components/Skills";
 import "./styles/global.css";
 import CircleMouse, { MouseVariantProvider } from "./modules/customMouse";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </div>
         <div id="about">
           <About />
+        </div>
+        <div id="experience">
+          <Experience />
         </div>
         <div id="skills">
           <Skills />

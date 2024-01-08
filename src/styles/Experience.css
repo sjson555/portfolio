@@ -1,0 +1,20 @@
+.experience {
+  background: white;
+  height: 100vh;
+  width: 100%;
+}
+
+.experience-title {
+  text-align: center;
+  color: black;
+  font-size: 1.6em;
+}
+
+.experience-hedding {
+  position: relative;
+  display: inline-block;
+  font-size: 2.4em;
+  font-weight: 400;
+  margin: 30px 0;
+  color: black;
+}
