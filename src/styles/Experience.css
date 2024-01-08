@@ -22,10 +22,15 @@
 .experience-content {
   margin-left: auto;
   box-sizing: border-box;
+  transition: color 0.7s;
   font-size: 1.3rem;
   padding: 1rem;
   margin-right: 8vw;
   width: 100%;
   line-height: 1.5;
   color: black;
+}
+
+.experience-content a:hover {
+  color: #f86a6a;
 }
