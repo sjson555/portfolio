@@ -19,6 +19,11 @@ const Experience = () => {
             멀티캠퍼스 풀스택 개발자 교육과정
           </a>
         </p>
+        <p>
+          2022.12~2023.01
+          <br />
+          서울42 LA PISCINE
+        </p>
       </div>
     </div>
   );
